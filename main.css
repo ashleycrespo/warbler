@@ -27,7 +27,13 @@
     margin: 2rem;
     border-radius: 10px;
     text-align: center;
-} 
+}
+svg {
+    width: 100%; /* Set the desired width */
+    height: 100%; /* Set the desired height */
+    position: absolute; /* or relative, fixed, sticky */
+    top: 0%; /* Adjust the top position */
+}
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 2rem, 100ch);
