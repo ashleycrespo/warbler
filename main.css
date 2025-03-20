@@ -17,23 +17,24 @@
         }
     
     body{
-    background-color: #2E535F;
+    background-color: #E5CA9A;
 }
 
 .hero{
-    background-color: #2E535F;
+    background-color: none;
     color: #6d7b60;
     padding: 2rem;
     margin: 2rem;
     border-radius: 10px;
     text-align: center;
 }
-svg {
+.layer_1 {
     width: 100%; /* Set the desired width */
-    height: 100%; /* Set the desired height */
+    height: 200px; /* Set the desired height */
     position: absolute; /* or relative, fixed, sticky */
     top: -10%; /* Adjust the top position */
 }
+
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 2rem, 100ch);
@@ -73,9 +74,13 @@ footer{
 
 h1{
     font-family: "Warbler Variable";
-    color: #364F70
+    color: #6d7b60
 }
 
+h2{
+    font-family: "Warbler Variable Italic";
+    color: #6d7b60
+}
 h3{
     font-weight:20; 
     text-align: center;
@@ -83,7 +88,7 @@ h3{
     font-family: "Warbler Variable";
     line-height: 10px;
     animation: weightChange 7s infinite;
-    color: #6d7b60
+    color: #2E535F
 }
 
 h4{
@@ -126,6 +131,31 @@ p{
     }
     0%, 100%
        {font-variation-settings: "opsz" 96, "wght" 700;
+    }
+    
+}
+
+/* animation for variation section */
+.weight{
+    animation: VariationWeightChange 3s infinite;
+}
+@keyframes VariationWeightChange {
+    0%, 100%{
+        font-variation-settings: "wght" 400;
+    }
+    50%{font-variation-settings: "wght" 700;
+    }
+    
+}
+
+.optical-size{
+    animation: variationOpticalSizeChange 3s infinite;
+}
+@keyframes variationOpticalSizeChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 15;
+    }
+    50%{font-variation-settings: "opsz" 96;
     }
     
 }
