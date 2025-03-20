@@ -20,19 +20,25 @@
     background-color: #E5CA9A;
 }
 
-.hero{
-    background-color: none;
-    color: #6d7b60;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 10px;
-    text-align: center;
+.hero-container {
+    position: relative;
+    height: 100vh
 }
-.layer_1 {
-    width: 100%; /* Set the desired width */
-    height: 200px; /* Set the desired height */
-    position: absolute; /* or relative, fixed, sticky */
-    top: -10%; /* Adjust the top position */
+
+.hero h3 {
+    position: absolute;
+    top: 17%; /* Adjust as needed */
+    left: 48%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the text */
+    z-index: 1; /* Ensure it appears above the SVG */
+    font-size: 10rem
+}
+
+.hero svg {
+    position: relative; /* Ensure it's not static */
+    top: 40%; /* Adjust this value to move it down */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* how the page wrapper will appear on mobile */
@@ -42,27 +48,30 @@
 }
 /* how the page wrapper appears on desktop */
 
-@media only screen and (min-width:800px){
+/* @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 25px;
+grid-gap: 20%;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
+grid-template-rows: 1fr 1fr;
 grid-template-areas: 
     "h v"
     "a a";
-}
+} */
 
 #history {
-grid-area: h;
+/* grid-area: h; */
+height: 50%;
+width: 80%;
 }
 
 #variations{
-grid-area: v;
+/* grid-area: v; */
+width: 400px;
 }
 
 #alphabet {
-grid-area: a;
+/* grid-area: a; */
 }
 }
 /* CSS for the footer */
@@ -88,17 +97,11 @@ h3{
     font-family: "Warbler Variable";
     line-height: 10px;
     animation: weightChange 7s infinite;
-    color: #2E535F
+    color: #E5CA9A
 }
 
 h4{
-    font-weight:20; 
-    text-align: center;
-    font-size: 5em;
     font-family: "Warbler Variable Italic";
-    line-height: 10px;
-    animation: weightChangeItalic 7s infinite;
-    margin: 60px;
     color: #6d7b60
 }
 
