@@ -48,32 +48,38 @@
 }
 /* how the page wrapper appears on desktop */
 
-/* @media only screen and (min-width:800px){
+@media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 20%;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+grid-gap: 10%;
+grid-template-columns: 6fr 6fr;
+grid-template-rows: 1fr, 1fr;
 grid-template-areas: 
     "h v"
     "a a";
-} */
+}
+#history, #variations, #alphabet {
+    width: 100%; /* Allow the container to take full width */
+    max-width: none; /* Remove any maximum width constraints */
+}
 
 #history {
-/* grid-area: h; */
-height: 50%;
-width: 80%;
+grid-area: h;
+margin-top: -90px;
+margin-left: -100px;
 }
 
 #variations{
-/* grid-area: v; */
-width: 400px;
+grid-area: v;
+margin-top: -90px;
+margin-left: 100px;
 }
 
 #alphabet {
-/* grid-area: a; */
+grid-area: a;
+margin-left: -100px;
 }
-}
+
 /* CSS for the footer */
 footer{
     background-color: gray;
@@ -188,4 +194,3 @@ p{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
-
