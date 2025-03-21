@@ -18,6 +18,7 @@
   
   .logo {
     margin: 0;
+    color:#2E535F
   }
   /* where to change the background color of the pop-up nav bar*/
   nav {
@@ -54,7 +55,7 @@
   }
   /* where to change the font color of the nav bar pop-up */
   nav a:hover {
-      color: orange;
+      color: #38869F;
   }
   
   .nav-checkbox:checked ~ nav {

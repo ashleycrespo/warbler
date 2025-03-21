@@ -27,11 +27,11 @@
 
 .hero h3 {
     position: absolute;
-    top: 17%; /* Adjust as needed */
+    top: 18%; /* Adjust as needed */
     left: 48%; /* Adjust as needed */
     transform: translate(-50%, -50%); /* Center the text */
     z-index: 1; /* Ensure it appears above the SVG */
-    font-size: 10rem
+    font-size: 11rem
 }
 
 .hero svg {
