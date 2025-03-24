@@ -52,8 +52,8 @@
 .page-wrapper{
 display: grid;
 grid-gap: 10%;
-grid-template-columns: 6fr 6fr;
-grid-template-rows: 1fr, 1fr;
+grid-template-columns: 9fr 6fr;
+grid-template-rows: 2fr, 2fr;
 grid-template-areas: 
     "h v"
     "a a";
@@ -66,7 +66,7 @@ grid-template-areas:
 #history {
 grid-area: h;
 margin-top: -90px;
-margin-left: -100px;
+margin-left: -200px;
 }
 
 #variations{
@@ -77,7 +77,7 @@ margin-left: 100px;
 
 #alphabet {
 grid-area: a;
-margin-left: -100px;
+margin-left: -200px;
 }
 
 /* CSS for the footer */
@@ -89,12 +89,12 @@ footer{
 
 h1{
     font-family: "Warbler Variable";
-    color: #6d7b60
+    color: #2E535F;
 }
 
 h2{
     font-family: "Warbler Variable Italic";
-    color: #6d7b60
+    color: #2E535F;
 }
 h3{
     font-weight:20; 
@@ -103,27 +103,33 @@ h3{
     font-family: "Warbler Variable";
     line-height: 10px;
     animation: weightChange 7s infinite;
-    color: #E5CA9A
+    color: #2E535F;
 }
 
 h4{
     font-family: "Warbler Variable Italic";
-    color: #6d7b60
+    color: #2E535F;
 }
 
-.paragraph-hero{
+h5{
+    font-family: "Warbler Variable";
+    color: #2E535F;
+    font-size: 1.5em;
+}
+
+/* .paragraph-hero{
     text-align: center;
     font-family: "Warbler Variable Italic";
     line-height: 10px;
     font-size: 1.5em;
-}
+} */
 
-p{
+/* p{
     color: #6d7b60;
     font-family: "Warbler Variable";
     font-size: 1em;
 
-}
+} */
 
 @keyframes weightChange {
     0%, 100%{
