@@ -46,6 +46,7 @@
 .page-wrapper{
     width: min(100% - 2rem, 100ch);
     margin-inline: auto;
+    overflow: visible;
 }
 /* how the page wrapper appears on desktop */
 
@@ -115,6 +116,12 @@ h4{
 }
 
 h5{
+    font-family: "Warbler Variable";
+    color: #2E535F;
+    font-size: 1.5em;
+}
+
+h6{
     font-family: "Warbler Variable";
     color: #2E535F;
     font-size: 1.5em;
