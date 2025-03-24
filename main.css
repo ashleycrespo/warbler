@@ -13,7 +13,7 @@
     
         font-family: 'Warbler Variable Italic';
         font-style: italic;
-        font-weight: normal;
+        font-weight: bold;
         }
     
     body{
@@ -31,7 +31,8 @@
     left: 48%; /* Adjust as needed */
     transform: translate(-50%, -50%); /* Center the text */
     z-index: 1; /* Ensure it appears above the SVG */
-    font-size: 11rem
+    font-size: 11rem;
+    color: #E5CA9A;
 }
 
 .hero svg {
@@ -95,6 +96,7 @@ h1{
 h2{
     font-family: "Warbler Variable Italic";
     color: #2E535F;
+    font-size: 2em;
 }
 h3{
     font-weight:20; 
@@ -109,6 +111,7 @@ h3{
 h4{
     font-family: "Warbler Variable Italic";
     color: #2E535F;
+    font-size: 2em;
 }
 
 h5{
