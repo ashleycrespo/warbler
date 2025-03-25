@@ -27,7 +27,7 @@
 
 .hero h3 {
     position: absolute;
-    top: 18%; /* Adjust as needed */
+    top: 17%; /* Adjust as needed */
     left: 48%; /* Adjust as needed */
     transform: translate(-50%, -50%); /* Center the text */
     z-index: 1; /* Ensure it appears above the SVG */
@@ -84,7 +84,7 @@ margin-left: -200px;
 }
 
 #download-button {
-    margin-top: -22%;
+    margin-top: -51%;
     margin-left: 65%;
 }
 
@@ -244,3 +244,39 @@ h6{
 }
 
 /* Mobile view styles */
+@media (max-width: 768px) {
+    .hero h3 {
+        position: absolute;
+        top: 8%; /* Adjust as needed */
+        left: 49%; /* Adjust as needed */
+        transform: translate(-50%, -50%); /* Center the text */
+        z-index: 1; /* Ensure it appears above the SVG */
+        font-size: 4rem;
+        color: #E5CA9A;
+    }
+    
+    .hero svg {
+        position: relative; /* Ensure it's not static */
+        top: 17%; /* Adjust this value to move it down */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #history {
+        grid-area: h;
+        margin-top: -90px;
+        margin-left: -200px;
+    }
+        
+    #variations{
+        grid-area: v;
+        margin-top: -90px;
+        margin-left: 100px;
+    }
+        
+    #alphabet {
+        grid-area: a;
+        margin-left: -200px;
+    }
+
+        
+}
