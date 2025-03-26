@@ -49,12 +49,20 @@
     overflow: visible;
 }
 /* how the page wrapper appears on desktop */
+#side-vines{
+    position: absolute;
+    top: 74%;
+    left: -100%;
+    width: 300%;
+    height: 200%;
+    z-index: -1;
+}
 
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 10%;
-grid-template-columns: 9fr 6fr;
+grid-gap: 5%;
+grid-template-columns: 3fr 4fr;
 grid-template-rows: 2fr 2fr; /* Removed the comma causing syntax error */
 grid-template-areas: 
     "h v"
@@ -69,23 +77,23 @@ grid-template-areas:
 #history {
 grid-area: h;
 margin-top: -90px;
-margin-left: -200px;
+margin-left: -40px;
 }
 
 #variations{
 grid-area: v;
 margin-top: -90px;
-margin-left: 100px;
+margin-left: 98px;
 }
 
 #alphabet {
 grid-area: a;
-margin-left: -200px;
+margin-left: -40px;
 }
 
 #download-button {
-    margin-top: -53%;
-    margin-left: 65%;
+    margin-top: -65%;
+    margin-left: 55%;
 }
 
 #download-button button {
