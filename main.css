@@ -271,22 +271,120 @@ h6{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .page-wrapper{
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: 3fr 4fr;
+        grid-template-rows: 2fr 2fr; /* Removed the comma causing syntax error */
+        grid-template-areas: 
+            "h v"
+            "a a";
+    }
+    #history, #variations, #alphabet {
+        width: 100%; /* Allow the container to take full width */
+        max-width: none; /* Remove any maximum width constraints */
+    }
     #history {
         grid-area: h;
-        margin-top: -90px;
-        margin-left: -200px;
+        margin-top: -480px;
+        margin-left: 70px;
     }
         
     #variations{
         grid-area: v;
-        margin-top: -90px;
-        margin-left: 100px;
+        margin-top: -480px;
+        margin-left: 70px;
     }
         
     #alphabet {
         grid-area: a;
-        margin-left: -200px;
+        margin-left: 68px;
+        margin-top: -237px;
     }
 
-        
+    h1{
+        font-family: "Warbler Variable";
+        color: #2E535F;
+    }
+    
+    h2{
+        font-family: "Warbler Variable Italic";
+        color: #2E535F;
+        font-size: .90em;
+    }
+    h3{
+        font-weight:20; 
+        text-align: center;
+        font-size: 5em;
+        font-family: "Warbler Variable";
+        line-height: 10px;
+        animation: weightChange 7s infinite;
+        color: #2E535F;
+    }
+    
+    h4{
+        font-family: "Warbler Variable Italic";
+        color: #2E535F;
+        font-size: 1em;
+    }
+    
+    h5{
+        font-family: "Warbler Variable";
+        color: #2E535F;
+        font-size: .60em;
+    }
+    
+    h6{
+        font-family: "Warbler Variable";
+        color: #2E535F;
+        font-size: 1em;
+        letter-spacing: 6px;
+        line-height: .05px;
+    }
+    #side-vines{
+        position: absolute;
+        top: 32%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+     
+    #download-button {
+        margin-top: -350px; /* Move the button up by 50px */
+        margin-left: 300px;
+    }
+    
+    #download-button button {
+        width: 100px; /* Set the button's width */
+        height: 30px; /* Set the button's height */
+        font-size: 1rem; /* Adjust the text size inside the button */
+        padding: 3px 10px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Ensure padding and border are included in the size */
+        color: #2E535F;
+        background-color: #E5CA9A;
+        border: 3px solid #2E535F;
+        border-radius: 10px; /* Add rounded corners */
+    }
+    
+    #download-button button:hover {
+        background-color: #2E535F; /* Change background color on hover */
+        color: #E5CA9A; /* Change text color on hover */
+        border-color: #E5CA9A; /* Change border color on hover */
+    }
+
+    footer{
+        background-color: #2E535F;
+        color: #E5CA9A;
+        height: 30px; /* Set a fixed height */
+        width: 262%; /* Ensure the footer spans the full width */
+        padding: 20px; /* Add padding for spacing inside the footer */
+        position: relative;
+        top: -40px;
+        left: -16px;
+        text-align: center; /* Center-align the text */
+        line-height: 4px; /* Align text vertically within the footer */
+        font-size: 8px;
+    }
 }
