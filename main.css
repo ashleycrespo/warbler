@@ -48,17 +48,30 @@
     margin-inline: auto;
     overflow: visible;
 }
-/* how the page wrapper appears on desktop */
+
 #side-vines{
     position: absolute;
-    top: 87%;
-    left: -100%;
-    width: 300%;
-    height: 200%;
+    top: 77%;
+    left: 0;
+    width: 100%;
+    height: auto;
     z-index: -1;
 }
 
-@media only screen and (min-width:800px){
+footer{
+    background-color: #2E535F;
+    color: #E5CA9A;
+    height: 30px; /* Set a fixed height */
+    width: 460%; /* Ensure the footer spans the full width */
+    padding: 20px; /* Add padding for spacing inside the footer */
+    position: relative;
+    top: -80px;
+    left: -350px;
+    text-align: center; /* Center-align the text */
+    line-height: 5px; /* Align text vertically within the footer */
+}
+
+
 .page-wrapper{
 display: grid;
 grid-gap: 5%;
@@ -72,11 +85,10 @@ grid-template-areas:
     width: 100%; /* Allow the container to take full width */
     max-width: none; /* Remove any maximum width constraints */
 }
-}
 
 #history {
 grid-area: h;
-margin-top: -90px;
+margin-top: -95px;
 margin-left: -40px;
 }
 
@@ -115,17 +127,6 @@ margin-left: -60px;
 }
 
 /* CSS for the footer */
-footer{
-    background-color: #2E535F;
-    color: #E5CA9A;
-    height: 30px; /* Set a fixed height */
-    width: 350%; /* Ensure the footer spans the full width */
-    padding: 20px; /* Add padding for spacing inside the footer */
-    position: relative;
-    left: -350px;
-    text-align: center; /* Center-align the text */
-    line-height: 5px; /* Align text vertically within the footer */
-}
 
 /* variable font animation */
 
