@@ -43,11 +43,6 @@
 }
 
 /* how the page wrapper will appear on mobile */
-.page-wrapper{
-    width: min(100% - 2rem, 100ch);
-    margin-inline: auto;
-    overflow: visible;
-}
 
 #side-vines{
     position: absolute;
@@ -65,7 +60,7 @@ footer{
     width: 460%; /* Ensure the footer spans the full width */
     padding: 20px; /* Add padding for spacing inside the footer */
     position: relative;
-    top: -80px;
+    top: -17px;
     left: -350px;
     text-align: center; /* Center-align the text */
     line-height: 5px; /* Align text vertically within the footer */
@@ -73,11 +68,14 @@ footer{
 
 
 .page-wrapper{
-display: grid;
-grid-gap: 5%;
-grid-template-columns: 3fr 4fr;
-grid-template-rows: 2fr 2fr; /* Removed the comma causing syntax error */
-grid-template-areas: 
+    width: min(100% - 2rem, 120ch);
+    margin-inline: auto;
+    overflow: visible;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 2fr 2fr; /* Removed the comma causing syntax error */
+    grid-template-areas: 
     "h v"
     "a a";
 }
@@ -89,29 +87,31 @@ grid-template-areas:
 #history {
 grid-area: h;
 margin-top: -95px;
-margin-left: -40px;
+margin-left: 90px;
 }
 
 #variations{
 grid-area: v;
 margin-top: -90px;
-margin-left: 98px;
+margin-left: 200px;
 }
 
 #alphabet {
 grid-area: a;
-margin-left: -60px;
+margin-left: 90px;
+margin-top: -10px;
 }
 
 #download-button {
     margin-top: -65%;
-    margin-left: 55%;
+    margin-left: 61%;
 }
 
 #download-button button {
     width: 200px; /* Set the button's width */
     height: 60px; /* Set the button's height */
     font-size: 1.5rem; /* Adjust the text size inside the button */
+    font-family: "Warbler Variable";
     padding: 10px 20px; /* Add padding for better spacing */
     box-sizing: border-box; /* Ensure padding and border are included in the size */
     color: #2E535F;
@@ -273,11 +273,11 @@ h6{
     }
 
     .page-wrapper{
-        display: grid;
-        grid-gap: 5%;
-        grid-template-columns: 3fr 4fr;
-        grid-template-rows: 2fr 2fr; /* Removed the comma causing syntax error */
-        grid-template-areas: 
+            display: grid;
+            rid-gap: 5%;
+            grid-template-columns: 3fr 4fr;
+            grid-template-rows: 2fr 2fr; /* Removed the comma causing syntax error */
+            grid-template-areas: 
             "h v"
             "a a";
     }
@@ -360,6 +360,7 @@ h6{
         width: 100px; /* Set the button's width */
         height: 30px; /* Set the button's height */
         font-size: 1rem; /* Adjust the text size inside the button */
+        font-family: "Warbler Variable";
         padding: 3px 10px; /* Add padding for better spacing */
         box-sizing: border-box; /* Ensure padding and border are included in the size */
         color: #2E535F;
